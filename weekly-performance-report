@@ -1,0 +1,120 @@
+Weekly Performance Report — D2C Subscription Brand
+
+End-to-end weekly analytics system for a subscription-based D2C brand within a multi-brand e-commerce portfolio. Owns the full lifecycle from data extraction to executive decision-making.
+
+Context
+
+A subscription-based consumer brand operating in the US, with acquisition driven by paid media (Meta, AppLovin, Google Search, Google Shopping) and retention driven by email, SMS, and recurring revenue streams.
+
+Within a multi-brand portfolio, marketing budgets are dynamically allocated across brands, making weekly performance reporting a critical input for capital allocation decisions.
+
+Problem
+
+Before this system existed, weekly performance tracking was:
+
+Fragmented across ad platforms, CRM tools, and warehouse queries
+Inconsistent in metric definitions across teams
+Too slow for weekly budget reallocation decisions
+
+As a result, leadership lacked a single source of truth to answer:
+
+Are we on track vs plan (weekly, MTD, YoY)?
+Where is performance coming from (paid vs non-paid, channel vs product)?
+What changed WoW that requires action?
+
+This led to delayed decisions and inefficient budget allocation across channels.
+
+Solution
+
+Designed and delivered a unified weekly reporting system structured around executive decision-making.
+
+1. Executive One-Pager
+
+Concise narrative summarizing:
+
+Spend and revenue performance
+Blended vs paid ROAS
+YoY and MTD performance vs plan
+Key drivers of WoW changes
+Required actions for the next week
+2. Performance Overview
+Daily trends for spend, revenue, and ROAS
+Channel contribution breakdown
+Paid vs non-paid revenue split
+3. Channel Deep Dives
+
+Granular analysis per acquisition channel and product line, including:
+
+ROAS, CPA, CPM, CTR, CPC
+Funnel metrics (ATC → Checkout → Purchase)
+Revenue per visitor
+AOV and conversion efficiency
+4. Retention & CRM Performance
+
+Email & SMS performance segmented by:
+
+Flow (Welcome, Abandoned Cart, etc.)
+Broadcast type (Acquisition vs Retention)
+
+Metrics include CTR, CVR, revenue per send, and unsubscribe rates.
+
+5. YoY & Plan Reconciliation
+Trailing week YoY comparison
+Month-to-date vs plan tracking
+Channel-level variance decomposition
+Data & Technical Implementation
+Data Layer
+
+SQL-based extraction from internal warehouse (Presto / Athena), joining:
+
+Order-level transactions
+Subscription lifecycle data
+Marketing attribution tables
+Processing Layer
+
+Python pipeline (Pandas / NumPy):
+
+Data cleaning and standardization
+WoW and YoY calculations
+Cross-source metric validation
+Export of structured datasets for reporting
+Reporting Layer
+
+Automated slide generation using standardized templates to ensure:
+
+Consistent weekly comparability
+Fast executive consumption (<5 min reading time)
+Stable visual hierarchy for trend recognition
+Data Quality & Governance
+
+Implemented strict validation rules:
+
+Dual-source spend reconciliation across platforms
+Hard separation between acquisition vs retention revenue
+Standardized metric definitions across tools
+No speculative interpretation allowed in reporting narrative
+Business Impact
+
+This system enabled:
+
+Faster weekly decision-making cycles for budget allocation
+More precise channel-level optimization based on ROAS deltas
+Identification of underperforming product lines leading to budget reallocation
+Improved alignment between marketing, finance, and growth teams
+Key Outcomes (add if you have numbers later)
+Reduced reporting time from X hours → Y hours per week
+Improved budget reallocation speed by X%
+Increased ROAS efficiency by X% after decision cycles shortened
+What this demonstrates
+Advanced SQL across production warehouse environments
+End-to-end Python analytics pipeline ownership
+Executive-level storytelling from complex datasets
+Strong data governance and metric standardization
+Cross-functional collaboration across marketing, finance, and BI
+Tech Stack
+
+Python · Pandas · NumPy · SQL (Presto / Athena) · Jupyter · Google Slides · Matplotlib
+
+Cadence
+
+Weekly delivery every Monday, covering prior Sunday–Saturday performance, with MTD and YoY rollups embedded for executive planning.
