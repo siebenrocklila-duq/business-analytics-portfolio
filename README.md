@@ -10,4 +10,4 @@ End-to-end weekly reporting system for marketing and revenue performance.
 → Executive-level reporting  
 → Budget allocation decisions  
 
-[View project](./projects/weekly-performance-report)
+[View project](https://github.com/siebenrocklila-duq/business-analytics-portfolio/tree/main/projects/weekly-performance-report)
