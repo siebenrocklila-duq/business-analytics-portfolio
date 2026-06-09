@@ -13,7 +13,8 @@ End-to-end weekly reporting system for marketing and revenue performance.
 [View project](https://github.com/siebenrocklila-duq/business-analytics-portfolio/blob/main/weekly-performance-report)
 
 
-###🔍 Subscription Tracking Issue — Root Cause Analysis
+### 🔍 Subscription Tracking Issue — Root Cause Analysis
 Identified a data quality issue affecting 6% of monthly retention revenue through retention KPI monitoring.
 → Retention Analytics → Root Cause Analysis → Cross-functional Resolution
+
 [View project](https://github.com/siebenrocklila-duq/business-analytics-portfolio/blob/main/weekly-performance-report)
