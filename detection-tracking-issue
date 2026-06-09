@@ -1,0 +1,15 @@
+#Case Study: Detecting a Subscription Tracking Issue Through Retention Analysis
+  
+#Context
+While monitoring acquisition experiments, I noticed inconsistencies in retention KPIs — Churn Rate and Net Collection Rate — that didn't follow historical patterns.
+  
+#Investigation
+I compared cohorts across experiments, reviewed subscription types, and cross-checked retention metrics against the subscription API. 
+  The root cause: two acquisition tests had been configured with an incorrect API subscription type, causing those subscriptions to be excluded from the standard retention tracking logic.
+
+#Impact
+~6% of monthly subscription retention revenue was not being collected or reported correctly, affecting business decisions on acquisition performance.
+
+#Resolution
+I escalated to IT and BI teams. Together we identified the root cause, defined a new tagging strategy for subscription offers, updated the tracking logic, and set up a process to catch similar issues in future experiments.
+Skills: Root Cause Analysis · Data Quality Validation · Retention Analytics · SQL · Cross-functional Collaboration · Data Governance
