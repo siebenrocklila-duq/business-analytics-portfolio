@@ -20,4 +20,4 @@ Identified a data quality issue affecting 6% of monthly retention revenue throug
 → Root Cause Analysis 
 → Cross-functional Resolution 
 
-[View project](https://github.com/siebenrocklila-duq/business-analytics-portfolio/blob/main/weekly-performance-report)
+[View project](https://github.com/siebenrocklila-duq/business-analytics-portfolio/blob/main/detection-tracking-issue)
